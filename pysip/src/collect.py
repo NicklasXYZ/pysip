@@ -63,7 +63,6 @@ class StaticIndexPage:
         self.assets_dir = os.path.join(origin_dir, "staticfiles")
         # - The directory where all static index page templates are located:
         self.template_dir = os.path.join(origin_dir, "base")
-        print("template_dir: ", self.template_dir)
 
         # Check all directories, i.e. either validate, create or delete
         # directories
