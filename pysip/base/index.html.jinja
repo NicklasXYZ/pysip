@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <title>Index Page</title>
+    <!-- Metadata -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="Index Page">
+    <meta name="description" content="Index Page">
+    <meta name="author" content="NicklasXYZ">
+    <!-- Add HTML document styling -->
+    <link rel="stylesheet" href="staticfiles/index.css">
+</head>
+
+<body>
+    <main>
+        <div class="container pagehead">
+            <!-- The relative path to the image shown at the top of the index page: -->
+            <img class="logo" src="staticfiles/main_image.svg">
+            <!-- The title of the index page is inseted in the following tag: -->
+            <h1 id="title"></h1>
+        </div>
+
+        <div class="wrapper pagedata">
+            <!-- The static index page description is 
+                inserted in the following tag: -->
+            <p class="text" id="description"></p>
+        </div>
+
+        <!-- The collection of relative paths to other static 
+            web pages are inserted in the following tag -->
+        <div class="wrapper" id="content"></div>
+    </main>
+    <footer>
+        <p id="footer"></p>
+    </footer>
+</body>
+
+<!-- Include user-defined metadata -->
+<script src="staticfiles/metadata.js"></script>
+
+<!-- Include the static page data generated 
+    by running the "collect.py" python script  -->
+<script src="staticfiles/filelist.js"></script>
+
+<!-- Modify the DOM of this HTML document by using the
+     data in the "pagelist.js" javascript file -->
+<script src="staticfiles/index.js"></script>
+
+</html>
