@@ -1,10 +1,10 @@
-# pySIP: A Static Index Page Generator
+# pysip: A Static Index Page Generator
 
 This repository contains the code for the pysip commandline tool. This commandline tool makes it easy to generate a simple, responsive and static index page which essentially organizes and displays a collection of links to other static pages.
 
-The commandline tool simply traverses a given directory and scans for HTML files with the name `index.html`. Metadata (title, keywords, description, author) and relative paths to these files are then collected, such that they can be included in a final static index page.
+The commandline tool simply traverses a given directory and scans for HTML files with the name "index.html". Metadata (title, keywords, description, author) and relative paths to these files are then collected, such that they can be included in a final static index page (as shown in the [preview section](#theme-preview)).
 
-pysip was mostly created for my own convenicence. I have mostly been using it for organizing markdown files and jupyter notebooks which have been exported as html.
+pysip was mostly created for my own convenience. I have mostly been using it for organizing markdown files and jupyter notebooks which have been exported as html.
 
 ## Dependencies
 
@@ -36,9 +36,9 @@ A number of pre-defined themes / color palettes for the index page have been def
 
 To be able to generate a static index page with pysip follow the points below and the note about the assumed directory structure.
 
-### Generating a static index page with `pysip`
+### Generating a static index page with pysip
 
-1. Install the `pysip` commandline tool through pip:
+1. Install the pysip commandline tool through pip:
    ```bash
    pip install git+https://github.com/nicklasxyz/pysip
    ```
@@ -129,7 +129,7 @@ pysip -d content --color1 "#ffffff" --color2 "#393e46" --color3 "#76ead7"  --col
 
 To change the title, description and text in the footer of the static index page, simply edit the `metadata.js` file contained in the `staticfiles` directory.
 
-```json
+```text
 # Default file content: staticfiles/metadata.js
 
 var INDEX_PAGE_DATA = {
